@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Register</title>
-    <link rel="stylesheet" href="/authenticate/register.css">
+    <link rel="stylesheet" href="authenticate/register.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body class="container">
@@ -54,6 +54,6 @@
     <a href="/login?action=redirectLogin" class="sign-in-btn">Đã có tài khoản? Đăng nhập</a>
 </div>
 
-<script src="/authenticate/register.js"></script>
+<script src="authenticate/register.js"></script>
 </body>
 </html>

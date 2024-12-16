@@ -24,7 +24,7 @@ html {
 }
 
 .login-box h1 {
-    color: #ffffff;
+    color: #fff;
     margin-bottom: 30px;
 }
 

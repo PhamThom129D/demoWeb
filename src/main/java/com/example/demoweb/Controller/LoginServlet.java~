@@ -79,13 +79,13 @@ public class LoginServlet extends HttpServlet {
         User user = new User(username,password,phonenumber,address);
         System.out.println(username);
         if(userService.checkUser(username)){
-            userService.signUp(user);
-            System.out.println("Đăng ký thành công");
-            resp.sendRedirect("/authenticate/login.jsp");
-        }else {
             System.out.println("tai khoan da ton tai");
             resp.sendRedirect("/authenticate/register.jsp");
             resp.getWriter().println("<h1>Tai khoan da ton tai</h1>");
+        }else {
+            userService.signUp(user);
+            System.out.println("Đăng ký thành công");
+            resp.sendRedirect("/authenticate/login.jsp");
         }
     }
 
